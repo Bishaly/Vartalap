@@ -1,0 +1,194 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root,
+  html[data-theme="forest-mint"] {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --v-bg: #F5F7F4;
+    --v-surface: #FFFFFF;
+    --v-surface-alt: #EAF2ED;
+    --v-chip: #DCEBE2;
+    --v-text: #252D2B;
+    --v-muted: #293D50;
+    --v-primary: #183B38;
+    --v-secondary: #237D68;
+    --v-gold: #D8B982;
+    --v-border: #CFE0D6;
+    --v-bubble-in-bg: #FFFFFF;
+    --v-bubble-in-text: #252D2B;
+    --v-bubble-out-bg: #237D68;
+    --v-bubble-out-text: #FFFFFF;
+  }
+
+  html[data-theme="soft-ivory"] {
+    --v-bg: #F5F7F4;
+    --v-surface: #FCFDFB;
+    --v-surface-alt: #EEF2EE;
+    --v-chip: #E6ECE7;
+    --v-text: #252D2B;
+    --v-muted: #465764;
+    --v-primary: #237D68;
+    --v-secondary: #183B38;
+    --v-gold: #D8B982;
+    --v-border: #DADFD8;
+    --v-bubble-in-bg: #FFFFFF;
+    --v-bubble-in-text: #252D2B;
+    --v-bubble-out-bg: #183B38;
+    --v-bubble-out-text: #FFFFFF;
+  }
+
+  html[data-theme="midnight-jade"] {
+    --v-bg: #151B19;
+    --v-surface: #1D2523;
+    --v-surface-alt: #252D2B;
+    --v-chip: #243631;
+    --v-text: #F5F7F4;
+    --v-muted: #B6CBC0;
+    --v-primary: #237D68;
+    --v-secondary: #53B097;
+    --v-gold: #D8B982;
+    --v-border: #313E3A;
+    --v-bubble-in-bg: #252D2B;
+    --v-bubble-in-text: #F5F7F4;
+    --v-bubble-out-bg: #237D68;
+    --v-bubble-out-text: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--v-bg);
+    color: var(--v-text);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Safe sanitized email HTML container */
+.vartalap-email-html {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.vartalap-email-html p {
+  margin-bottom: 0.5rem;
+}
+
+.vartalap-email-html p:last-child {
+  margin-bottom: 0;
+}
+
+.vartalap-email-html a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.vartalap-email-html ul,
+.vartalap-email-html ol {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.vartalap-email-html ul {
+  list-style-type: disc;
+}
+
+.vartalap-email-html ol {
+  list-style-type: decimal;
+}
+
+.vartalap-email-html blockquote {
+  border-left: 2px solid rgba(148, 163, 184, 0.45);
+  padding-left: 0.75rem;
+  margin: 0.5rem 0;
+  opacity: 0.85;
+}
+
+.vartalap-email-html img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.vartalap-email-html pre,
+.vartalap-email-html code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+/* Official Google Sign-In Material button styling */
+.gsi-material-button {
+  user-select: none;
+  appearance: none;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid var(--v-border);
+  border-radius: 0.875rem;
+  box-sizing: border-box;
+  color: #252d2b;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  height: 48px;
+  letter-spacing: 0.01em;
+  outline: none;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .gsi-material-button {
+  background-color: #1d2523;
+  border-color: #313e3a;
+  color: #f5f7f4;
+}
+
+.gsi-material-button:hover:not(:disabled) {
+  background-color: #f5f7f4;
+  border-color: #237d68;
+  box-shadow: 0 1px 3px rgba(24, 59, 56, 0.08);
+}
+
+.dark .gsi-material-button:hover:not(:disabled) {
+  background-color: #252d2b;
+  border-color: #53b097;
+}
+
+.gsi-material-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.gsi-material-button-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gsi-material-button-icon {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}

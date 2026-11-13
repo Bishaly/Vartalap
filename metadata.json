@@ -1,0 +1,6 @@
+{
+  "name": "Vartalap",
+  "description": "Conversations, made simple. Calm person-centered Gmail conversations alongside traditional Gmail folders and a complete Kotlin/Jetpack Compose Android Studio project.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

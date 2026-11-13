@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Mint Mist Soft Ribbon Conversation Frame -->
+    <path
+        android:fillColor="#DCEBE2"
+        android:pathData="M34,32 L74,32 C79.5,32 84,36.5 84,42 L84,64 C84,69.5 79.5,74 74,74 L46,74 L35,83 C33.8,83.9 32,83.1 32,81.5 L32,74 C27.5,73.1 24,69.0 24,64 L24,42 C24,36.5 28.5,32 34,32 Z" />
+    <!-- Soft Ivory Folded Letter Cut -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M35,44 L54,57 L73,44"
+        android:strokeColor="#183B38"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="3.6" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M35,62 L46,52 M73,62 L62,52"
+        android:strokeColor="#237D68"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.8" />
+    <!-- Warm Gold Trust Dot -->
+    <path
+        android:fillColor="#D8B982"
+        android:pathData="M54,37 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

@@ -1,0 +1,5 @@
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-keep class com.nextgen.vartalap.gmail.dto.** { *; }
+-keepclassmembers class com.nextgen.vartalap.gmail.dto.** { *; }
+-keep class kotlinx.serialization.json.** { *; }
+-dontwarn org.jsoup.nodes.**
